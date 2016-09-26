@@ -8,10 +8,11 @@
     <div class="row text-center">
         <?php
         $args = array(
-            'posts_per_page' => 5,
+            'posts_per_page' => 6,
             'post_type' => 'custom_post',
+            "order" => "DESC",
             'meta_key' => 'custom_post_category',
-            'meta_value' => $query->query_vars['Foreign Cinema'],
+            'meta_value' => $query->query_vars['foreign'],
             'meta_compare' => 'LIKE'
         );
         $recent_posts = wp_get_recent_posts($args, ARRAY_A);
@@ -21,7 +22,7 @@
         foreach ($recent_posts as $recent) {
             $i = $recent['ID'];
             ?>
-            
+
             <div class="col-md-2 col-sm-6 hero-feature">
                 <div class="thumbnail">
                     <img style="width:155px; height:150px;" src="<?php
@@ -30,10 +31,13 @@
                     ?>" alt="">
                     <div class="caption">
                         <p style="margin-top:-2px; height:40px; overflow:hidden"><?php
-                            echo $recent['post_title']
+                            echo get_the_title($i);
                             ?></p>
                         <p>
-                            <a href="#" class="btn btn-primary">More</a>
+                            <?php
+                            echo '<a href="' . get_permalink($i) . '" class="btn btn-primary">More</a>';
+                            ?>
+
                         </p>
                     </div>
                 </div>
@@ -42,19 +46,6 @@
             <?php
         }
         ?>
-
-        <div class="col-md-2 col-sm-6 hero-feature">
-            <div class="thumbnail">
-                <img src="<?php echo get_bloginfo('stylesheet_directory'); ?>/img/PLACE-YOUR-ADVERT-HERE.gif" alt="">
-                <div class="caption">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                    <p>
-                        <a href="#" class="btn btn-primary">More</a>
-                    </p>
-                </div>
-            </div>
-        </div>
-
 
     </div>
 </div>

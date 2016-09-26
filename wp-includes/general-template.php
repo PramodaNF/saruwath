@@ -117,7 +117,7 @@ function get_sidebar( $name = null ) {
 	if ( '' !== $name )
 		$templates[] = "sidebar-{$name}.php";
 
-	$templates[] = 'sidebar.php';
+	$templates[] = 'side_recentpost.php';
 
 	locate_template( $templates, true );
 }

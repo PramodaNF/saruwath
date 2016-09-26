@@ -7,76 +7,46 @@
 
 <div class="container">
     <div class="row text-center">
-        <div class="col-md-2 col-sm-6 hero-feature">
-            <div class="thumbnail">
-                <img src="<?php echo get_bloginfo('stylesheet_directory'); ?>/img/news_icon.jpg" alt="">
-                <div class="caption">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                    <p>
-                        <a href="#" class="btn btn-primary">More</a>
-                    </p>
-                </div>
-            </div>
-        </div>
+        <?php
+        $args = array(
+            'posts_per_page' => 6,
+            'post_type' => 'custom_post',
+            "order" => "DESC",
+            'meta_key' => 'custom_post_category',
+            'meta_value' => $query->query_vars['Hotty Girl'],
+            'meta_compare' => 'LIKE'
+        );
+        $recent_posts = wp_get_recent_posts($args, ARRAY_A);
+        ?>
 
-        <div class="col-md-2 col-sm-6 hero-feature">
-            <div class="thumbnail">
-                <img src="<?php echo get_bloginfo('stylesheet_directory'); ?>/img/news_icon.jpg" alt="">
-                <div class="caption">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                    <p>
-                        <a href="#" class="btn btn-primary">More</a>
-                    </p>
-                </div>
-            </div>
-        </div>
+        <?php
+        foreach ($recent_posts as $recent) {
+            $i = $recent['ID'];
+            ?>
 
-        <div class="col-md-2 col-sm-6 hero-feature">
-            <div class="thumbnail">
-                <img src="<?php echo get_bloginfo('stylesheet_directory'); ?>/img/news_icon.jpg" alt="">
-                <div class="caption">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                    <p>
-                        <a href="#" class="btn btn-primary">More</a>
-                    </p>
-                </div>
-            </div>
-        </div>
+            <div class="col-md-2 col-sm-6 hero-feature">
+                <div class="thumbnail">
+                    <img style="width:155px; height:150px;" src="<?php
+                    $feat_image = wp_get_attachment_url(get_post_thumbnail_id($i));
+                    echo $feat_image;
+                    ?>" alt="">
+                    <div class="caption">
+                        <p style="margin-top:-2px; height:40px; overflow:hidden"><?php
+                            echo get_the_title($i);
+                            ?></p>
+                        <p>
+                            <?php
+                            echo '<a href="' . get_permalink($i) . '" class="btn btn-primary">More</a>';
+                            ?>
 
-        <div class="col-md-2 col-sm-6 hero-feature">
-            <div class="thumbnail">
-                <img src="<?php echo get_bloginfo('stylesheet_directory'); ?>/img/news_icon.jpg" alt="">
-                <div class="caption">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                    <p>
-                        <a href="#" class="btn btn-primary">More</a>
-                    </p>
+                        </p>
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <div class="col-md-2 col-sm-6 hero-feature">
-            <div class="thumbnail">
-                <img src="<?php echo get_bloginfo('stylesheet_directory'); ?>/img/news_icon.jpg" alt="">
-                <div class="caption">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                    <p>
-                        <a href="#" class="btn btn-primary">More</a>
-                    </p>
-                </div>
-            </div>
-        </div>
+            <?php
+        }
+        ?>
 
-        <div class="col-md-2 col-sm-6 hero-feature">
-            <div class="thumbnail">
-                <img src="<?php echo get_bloginfo('stylesheet_directory'); ?>/img/PLACE-YOUR-ADVERT-HERE.gif" alt="">
-                <div class="caption">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                    <p>
-                        <a href="#" class="btn btn-primary">More</a>
-                    </p>
-                </div>
-            </div>
-        </div>
     </div>
 </div>

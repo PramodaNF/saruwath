@@ -83,21 +83,18 @@ function advertisment_data($post_id)
     }
 
 //    Post Category Advertisment
-    if (isset($_POST['foreign_cenema_advertisment'])) {
-        update_post_meta($post_id, 'foreign_cenema_advertisment', sanitize_text_field($_POST['foreign_cenema_advertisment']));
+    if (isset($_POST['first_side_advertisment'])) {
+        update_post_meta($post_id, 'first_side_advertisment', sanitize_text_field($_POST['first_side_advertisment']));
     }
 
-    if (isset($_POST['gallery_advertisment'])) {
-        update_post_meta($post_id, 'gallery_advertisment', sanitize_text_field($_POST['gallery_advertisment']));
+    if (isset($_POST['second_side_advertisment'])) {
+        update_post_meta($post_id, 'second_side_advertisment', sanitize_text_field($_POST['second_side_advertisment']));
     }
 
-    if (isset($_POST['young_artists_advertisment'])) {
-        update_post_meta($post_id, 'young_artists_advertisment', sanitize_text_field($_POST['young_artists_advertisment']));
+    if (isset($_POST['third_side_advertisment'])) {
+        update_post_meta($post_id, 'third_side_advertisment', sanitize_text_field($_POST['third_side_advertisment']));
     }
 
-    if (isset($_POST['hotty_girls_advertisment'])) {
-        update_post_meta($post_id, 'hotty_girls_advertisment', sanitize_text_field($_POST['hotty_girls_advertisment']));
-    }
 
 }
 
@@ -161,32 +158,24 @@ function advertisment_meta_box_content($post)
 <!--Category Post advertisment-->
 
     <p>
-        <label for="foreign_cenema_advertisment" class="prfx-row-title"><?php _e('Foreign Cenema Category Advertisment', 'prfx-textdomain') ?></label>
-        <input style="width: 100%" type="text" name="foreign_cenema_advertisment" id="sub-title"
-               value="<?php if (isset($prfx_stored_meta['foreign_cenema_advertisment'])) echo $prfx_stored_meta['foreign_cenema_advertisment'][0]; ?>"/>
+        <label for="first_side_advertisment" class="prfx-row-title"><?php _e('Post View First Advertisment', 'prfx-textdomain') ?></label>
+        <input style="width: 100%" type="text" name="first_side_advertisment" id="sub-title"
+               value="<?php if (isset($prfx_stored_meta['first_side_advertisment'])) echo $prfx_stored_meta['first_side_advertisment'][0]; ?>"/>
     </p>
 
 
     <p>
-        <label for="gallery_advertisment" class="prfx-row-title"><?php _e('Gallary Category Advertisment', 'prfx-textdomain') ?></label>
-        <input style="width: 100%" type="text" name="gallery_advertisment" id="sub-title"
-               value="<?php if (isset($prfx_stored_meta['gallery_advertisment'])) echo $prfx_stored_meta['gallery_advertisment'][0]; ?>"/>
+        <label for="second_side_advertisment" class="prfx-row-title"><?php _e('Post View Second Advertisment', 'prfx-textdomain') ?></label>
+        <input style="width: 100%" type="text" name="second_side_advertisment" id="sub-title"
+               value="<?php if (isset($prfx_stored_meta['second_side_advertisment'])) echo $prfx_stored_meta['second_side_advertisment'][0]; ?>"/>
     </p>
 
 
     <p>
-        <label for="young_artists_advertisment" class="prfx-row-title"><?php _e('Young Artists Category Advertisment', 'prfx-textdomain') ?></label>
-        <input style="width: 100%" type="text" name="young_artists_advertisment" id="sub-title"
-               value="<?php if (isset($prfx_stored_meta['young_artists_advertisment'])) echo $prfx_stored_meta['young_artists_advertisment'][0]; ?>"/>
+        <label for="third_side_advertisment" class="prfx-row-title"><?php _e('Post View Third Advertisment', 'prfx-textdomain') ?></label>
+        <input style="width: 100%" type="text" name="third_side_advertisment" id="sub-title"
+               value="<?php if (isset($prfx_stored_meta['third_side_advertisment'])) echo $prfx_stored_meta['third_side_advertisment'][0]; ?>"/>
     </p>
-
-    <p>
-        <label for="hotty_girls_advertisment" class="prfx-row-title"><?php _e('Hotty Girls Category Advertisment', 'prfx-textdomain') ?></label>
-        <input style="width: 100%" type="text" name="hotty_girls_advertisment" id="sub-title"
-               value="<?php if (isset($prfx_stored_meta['hotty_girls_advertisment'])) echo $prfx_stored_meta['hotty_girls_advertisment'][0]; ?>"/>
-    </p>
-
-
 
     <?php
 }

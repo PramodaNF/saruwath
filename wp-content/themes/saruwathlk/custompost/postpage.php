@@ -4,26 +4,35 @@ add_action('init', 'custom_post');
 function custom_post()
 {
     register_post_type('custom_post', array(
-            'labels' => array(
-                'name' => __('Custom Post'),
-                'singular_name' => __('custom_post'),
+        'labels' => array(
+            'name' => __('Custom Post'),
+            'singular_name' => __('custom_post'),
 
-            ),
-            'public' => true,
-            'has_archive' => true,
-            'menu_position'=>2,
+        ),
 
-            'supports' => array('title', 'editor', 'thumbnail')
-        )
-    );
+        'public' => true,
+        'has_archive' => false,
+        'menu_position' => 2,
+        'rewrite' => array('slug' => 'custom_post'),
+        'show_ui' => true,
+
+
+
+        'supports' => array('title', 'editor', 'thumbnail'),
+          
+
+        ));
+
 
 }
 
 
 
+//add_filter( 'single_template', 'wpd_post_type_template' ) ;
+
 add_action('add_meta_boxes', 'custom_post_meta_box');
-// Save your meta box content
-add_action('save_post', 'custom_post_data');
+
+
 
 // Add a custom meta box to a post
 function custom_post_meta_box($post)
@@ -39,7 +48,8 @@ function custom_post_meta_box($post)
     );
 }
 
-
+// Save your meta box content
+add_action('save_post', 'custom_post_data');
 function custom_post_data($post_id)
 {
 
@@ -53,71 +63,42 @@ function custom_post_data($post_id)
     }
 
 
-    if (isset($_POST['custom_post_category'])) {
-        update_post_meta($post_id, 'custom_post_category', sanitize_text_field($_POST['custom_post_category']));
-    }
+    //accepted values whitelist
+    $allowed = array('foreign','gallary','hotty','young');
 
-  
+    if( isset( $_POST['custom_post_category'] ) )
+        update_post_meta( $post_id, 'custom_post_category', esc_attr( $_POST['custom_post_category'] ) );
+
+
+
 
 }
+
+
 
 function custom_post_meta_box_content($post)
 {
     wp_nonce_field(basename(__FILE__), 'prfx_homepage');
-    $prfx_stored_meta = get_post_meta($post->ID);
+    $selected = get_post_meta($post->ID);
     ?>
 
 
     <!--Category custom_post-->
 
     <p>
-        <label for="custom_post_category" class="prfx-row-title"><?php _e('Foreign Cinema', 'prfx-textdomain') ?></label>
-        <input  type="radio" name="custom_post_category" id="sub-title"
-               value="<?php if (isset($prfx_stored_meta['custom_post_category'])) echo $prfx_stored_meta['custom_post_category'][0]; ?>"/>
+        <label for="custom_post_category">Color</label>
+        <select name="custom_post_category" id="custom_post_category">
+            <option value="foreign" <?php selected( $selected, 'foreign' ); ?>>Foreign</option>
+            <option value="gallery" <?php selected( $selected, 'gallery' ); ?>>Gallery</option>
+            <option value="young" <?php selected( $selected, 'young' ); ?>>Young</option>
+            <option value="hotty" <?php selected( $selected, 'hotty' ); ?>>Hotty</option>
+        </select>
     </p>
-
-
-    <p>
-        <label for="custom_post_category" class="prfx-row-title"><?php _e('Gallery', 'prfx-textdomain') ?></label>
-        <input  type="radio" name="custom_post_category" id="sub-title"
-               value="<?php if (isset($prfx_stored_meta['custom_post_category'])) echo $prfx_stored_meta['custom_post_category'][0]; ?>"/>
-    </p>
-
-    <p>
-        <label for="custom_post_category" class="prfx-row-title"><?php _e('News', 'prfx-textdomain') ?></label>
-        <input type="radio" name="custom_post_category" id="sub-title"
-               value="<?php if (isset($prfx_stored_meta['custom_post_category'])) echo $prfx_stored_meta['custom_post_category'][0]; ?>"/>
-    </p>
-
-
-
-    <p>
-        <label for="custom_post_category" class="prfx-row-title"><?php _e('Hotty Girl', 'prfx-textdomain') ?></label>
-        <input type="radio" name="custom_post_category" id="sub-title"
-               value="<?php if (isset($prfx_stored_meta['custom_post_category'])) echo $prfx_stored_meta['custom_post_category'][0]; ?>"/>
-    </p>
-
-
-
-    <p>
-        <label for="custom_post_category" class="prfx-row-title"><?php _e('Young Artist', 'prfx-textdomain') ?></label>
-        <input type="radio" name="custom_post_category" id="sub-title"
-               value="<?php if (isset($prfx_stored_meta['custom_post_category'])) echo $prfx_stored_meta['custom_post_category'][0]; ?>"/>
-    </p>
-
-    <p>
-        <label for="custom_post_category" class="prfx-row-title"><?php _e('Music Video', 'prfx-textdomain') ?></label>
-        <input  type="radio" name="custom_post_category" id="sub-title"
-               value="<?php if (isset($prfx_stored_meta['custom_post_category'])) echo $prfx_stored_meta['custom_post_category'][0]; ?>"/>
-    </p>
-
-
-
-
-
 
     <?php
 }
+
+
 
 
 

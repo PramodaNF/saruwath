@@ -16,7 +16,7 @@ get_header();
     <div class="row">
 
         <!--        Slider Starts-->
-        <?php require_once('template/advertisment/slider_images.php'); ?>
+        <?php require_once('template/advertisment/homepage_slider_images.php'); ?>
         <!--        Slider Ends-->
 
 
@@ -73,7 +73,7 @@ get_header();
         </div>
 
         <!--        Side Advetisments Starts-->
-        <?php require_once('template/advertisment/side_advertisment.php'); ?>
+        <?php require_once('template/advertisment/homepage_side_advertisment.php'); ?>
         <!--        Side Advetisments  Ends-->
 
     </div>

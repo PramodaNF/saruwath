@@ -20,20 +20,19 @@ get_header();
 
 
 
-
 <div class="container bor">
     <div class="row">
         <!-- Article main content -->
         <article class="col-sm-8 maincontent">
             <header class="page-header">
-                <h1 >Gallery</h1>
+                <h1 >Gallary</h1>
             </header>
 
             <div class="row text-center">
                 <!-- <?php// print_r($category); ?> -->
                 <div class="col-md-4 col-sm-6 hero-feature">
                     <a href="http://www.saravita.lk/videos-ent/452654/voice-print-%e0%b6%91%e0%b6%9a%e0%b7%8a%e0%b6%9a-%e0%b7%83%e0%b7%92%e0%b6%82%e0%b6%af%e0%b7%94%e0%b7%80%e0%b6%9a%e0%b7%8a-%e0%b6%9a%e0%b7%92%e0%b6%ba%e0%b6%b8%e0%b7%94" >
-                        <div style="min-height: 315px;" class="thumbnail ">
+                        <div style="min-height: 315px;" class="thumbnail success">
 
                             <img src="http://static.lankadeepa.lk/admin/wp-content/uploads/2016/08/20160830Voice-Catimage.jpg" alt="">
                             <div class="caption">
@@ -48,7 +47,7 @@ get_header();
                 </div>
                 <div class="col-md-4 col-sm-6 hero-feature">
                     <a href="http://www.saravita.lk/videos-ent/450765/%e0%b6%a0%e0%b7%92%e0%b6%ad%e0%b7%8a%e2%80%8d%e0%b6%bb%e0%b7%8f%e0%b6%bd%e0%b7%8a-%e0%b6%91%e0%b6%9a%e0%b7%8a%e0%b6%9a-%e0%b7%83%e0%b6%82%e0%b6%9b-%e0%b6%af%e0%b7%92%e0%b6%b1%e0%b7%99%e0%b6%ad" >
-                        <div style="min-height: 315px;" class="thumbnail ">
+                        <div style="min-height: 315px;" class="thumbnail success">
 
                             <img src="http://static.lankadeepa.lk/admin/wp-content/uploads/2016/08/20160824Ekawage-Catimage.jpg" alt="">
                             <div class="caption">
@@ -63,7 +62,7 @@ get_header();
                 </div>
                 <div class="col-md-4 col-sm-6 hero-feature">
                     <a href="http://www.saravita.lk/videos-ent/449890/%e0%b6%a2%e0%b7%93%e0%b7%80%e0%b7%92%e0%b6%ad%e0%b7%9a-%e0%b6%94%e0%b6%b6%e0%b6%b8%e0%b6%ba%e0%b7%92-official-music-video" >
-                        <div style="min-height: 315px;" class="thumbnail ">
+                        <div style="min-height: 315px;" class="thumbnail success">
 
                             <img src="http://static.lankadeepa.lk/admin/wp-content/uploads/2016/08/catimg-09-2016-08-22-ent.jpg" alt="">
                             <div class="caption">
@@ -78,7 +77,7 @@ get_header();
                 </div>
                 <div class="col-md-4 col-sm-6 hero-feature">
                     <a href="http://www.saravita.lk/videos-ent/447676/volga-harshana-pre-wedding-shoot" >
-                        <div style="min-height: 315px;" class="thumbnail ">
+                        <div style="min-height: 315px;" class="thumbnail success">
 
                             <img src="http://static.lankadeepa.lk/admin/wp-content/uploads/2016/08/20160814Volga-Catimage.jpg" alt="">
                             <div class="caption">
@@ -94,7 +93,7 @@ get_header();
 
                 <div class="col-md-4 col-sm-6 hero-feature">
                     <a href="http://www.saravita.lk/videos-ent/447676/volga-harshana-pre-wedding-shoot" >
-                        <div style="min-height: 315px;" class="thumbnail ">
+                        <div style="min-height: 315px;" class="thumbnail success">
 
                             <img src="http://static.lankadeepa.lk/admin/wp-content/uploads/2016/08/20160814Volga-Catimage.jpg" alt="">
                             <div class="caption">
@@ -110,7 +109,7 @@ get_header();
 
                 <div class="col-md-4 col-sm-6 hero-feature">
                     <a href="http://www.saravita.lk/videos-ent/447676/volga-harshana-pre-wedding-shoot" >
-                        <div style="min-height: 315px;" class="thumbnail ">
+                        <div style="min-height: 315px;" class="thumbnail success">
 
                             <img src="http://static.lankadeepa.lk/admin/wp-content/uploads/2016/08/20160814Volga-Catimage.jpg" alt="">
                             <div class="caption">
@@ -241,9 +240,6 @@ get_header();
         <!-- /Sidebar -->
 
     </div>
-
-
-
 
 
 
