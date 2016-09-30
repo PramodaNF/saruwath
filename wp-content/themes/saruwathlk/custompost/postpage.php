@@ -12,13 +12,13 @@ function custom_post()
 
         'public' => true,
         'has_archive' => false,
-        'menu_position' => 2,
+        'menu_position' => 3,
         'rewrite' => array('slug' => 'custom_post'),
         'show_ui' => true,
 
 
 
-        'supports' => array('title', 'editor', 'thumbnail'),
+        'supports' => array('title', 'editor', 'thumbnail','category'),
           
 
         ));

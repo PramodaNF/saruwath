@@ -59,10 +59,31 @@
     <div class="news magenta col-lg-12">
         <span>Latest News</span>
         <ul>
-            <li><a href="#">Text 1 - Short Description </a></li>
-            <li><a href="#">Text 2 - Short Description</a></li>
-            <li><a href="#">Text 3 - Short Description</a></li>
-            <li><a href="#">Text 4 - Short Description</a></li>
+            <?php
+            $args = array(
+                'posts_per_page' => 6,
+                'post_type' => 'custom_post',
+                'order' => "DESC",
+                'category_name' => 'news'
+            );
+            $recent_posts = wp_get_recent_posts($args, ARRAY_A);
+            ?>
+
+            <?php
+            foreach ($recent_posts as $recent) {
+                $i = $recent['ID'];
+                ?>
+
+                <li>
+                    <?php
+                    echo '<a href="' . get_permalink($i) . '">' . get_the_title($i) . '</a>';
+                    ?>
+                </li>
+
+
+                <?php
+            }
+            ?>
         </ul>
     </div>
 
