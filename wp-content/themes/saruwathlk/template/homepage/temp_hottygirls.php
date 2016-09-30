@@ -11,10 +11,8 @@
         $args = array(
             'posts_per_page' => 6,
             'post_type' => 'custom_post',
-            "order" => "DESC",
-            'meta_key' => 'custom_post_category',
-            'meta_value' => $query->query_vars['Hotty Girl'],
-            'meta_compare' => 'LIKE'
+            'order' => "DESC",
+            'category_name' => 'hotty'
         );
         $recent_posts = wp_get_recent_posts($args, ARRAY_A);
         ?>

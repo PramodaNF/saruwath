@@ -7,9 +7,10 @@
 
 <div class="container" style="background-color: #ffffff;">
     <div class="row">
-        <div class="col-lg-6">
+        <div class="col-lg-12">
             <div class="row">
                 <ul class="event-list">
+
                     <li>
                         <time datetime="2014-07-20 2000">
                             <span class="day">1</span>
@@ -25,6 +26,7 @@
                             </ul>
                         </div>
                     </li>
+
                     <li>
                         <time datetime="2014-07-20 2000">
                             <span class="day">1</span>
@@ -101,12 +103,6 @@
 
                     </li>
                 </ul>
-
-            </div>
-
-        </div>
-        <div class="col-lg-6">
-            <div class="row">
 
                 <ul class="event-list">
                     <li>
@@ -206,7 +202,9 @@
                 </ul>
 
             </div>
+
         </div>
+
 
 
     </div>

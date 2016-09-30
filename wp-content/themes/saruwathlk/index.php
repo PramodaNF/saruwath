@@ -19,58 +19,8 @@ get_header();
         <?php require_once('template/advertisment/homepage_slider_images.php'); ?>
         <!--        Slider Ends-->
 
+        <?php require_once('template/homepage/temp_latest_hottygirls.php'); ?>
 
-        <div class="col-sm-4">
-            <div class="row text-center ">
-                <div class="col-md-6 col-sm-6 hero-feature">
-                    <div class="thumbnail">
-                        <img src="<?php echo get_bloginfo('stylesheet_directory'); ?>/img/news_icon.jpg" alt="">
-                        <div class="caption">
-                            <p>Lorem ipsum dolor sit amet,</p>
-                            <p>
-                                <a href="#" class="btn btn-primary">More</a>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-6 col-sm-6 hero-feature">
-                    <div class="thumbnail">
-                        <img src="<?php echo get_bloginfo('stylesheet_directory'); ?>/img/news_icon.jpg" alt="">
-                        <div class="caption">
-                            <p>Lorem ipsum dolor sit amet,</p>
-                            <p>
-                                <a href="#" class="btn btn-primary">More</a>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-6 col-sm-6 hero-feature">
-                    <div class="thumbnail">
-                        <img src="<?php echo get_bloginfo('stylesheet_directory'); ?>/img/news_icon.jpg" alt="">
-                        <div class="caption">
-                            <p>Lorem ipsum dolor sit amet,</p>
-                            <p>
-                                <a href="#" class="btn btn-primary">More</a>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-6 col-sm-6 hero-feature">
-                    <div class="thumbnail">
-                        <img src="<?php echo get_bloginfo('stylesheet_directory'); ?>/img/news_icon.jpg" alt="">
-                        <div class="caption">
-                            <p>Lorem ipsum dolor sit amet,</p>
-                            <p>
-                                <a href="#" class="btn btn-primary">More</a>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
 
         <!--        Side Advetisments Starts-->
         <?php require_once('template/advertisment/homepage_side_advertisment.php'); ?>
