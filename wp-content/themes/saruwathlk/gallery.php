@@ -32,7 +32,7 @@ get_header();
 
                 <?php
                 $args = array(
-                    'posts_per_page' => 6,
+                    'posts_per_page' => 15,
                     'post_type' => 'custom_post',
                     'order' => "DESC",
                     'category_name' => 'gallery'
@@ -73,14 +73,17 @@ get_header();
                 ?>
 
 
-                <div class="row">
-                    <ul class='pagination'>
-                        <li class='disabled'>
-                        <li class='active'><a href='#'>1<span class='sr-only'></span></a></li>
-                        <li><a href="http://www.saravita.lk/videos-ent/30">2</a></li>
-                        <li><a href="http://www.saravita.lk/videos-ent/30">&gt;</a>&nbsp;
-                    </ul>
-                </div>
+<!--                <div class="row">-->
+<!--                    <ul class='pagination'>-->
+<!--                        <li class='disabled'>-->
+<!--                        <li class='active'><a href='#'>1<span class='sr-only'></span></a></li>-->
+<!--                        <li><a href="http://www.saravita.lk/videos-ent/30">2</a></li>-->
+<!--                        <li><a href="http://www.saravita.lk/videos-ent/30">&gt;</a>&nbsp;-->
+<!--                    </ul>-->
+<!--                </div>-->
+
+
+              
 
             </div>
 
@@ -89,6 +92,7 @@ get_header();
 
         </article>
         <!-- /Article -->
+
 
 
 

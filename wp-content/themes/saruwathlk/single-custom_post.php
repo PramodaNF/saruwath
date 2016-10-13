@@ -35,16 +35,12 @@ get_header();
                 <div class="row">
 
                     <div class="social-sh col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                        <!-- Facebook -->
-                        <a href="https://www.facebook.com/sharer/sharer.php?u="
-                           title="Share on Facebook" target="_blank" class="btn btn-facebook"><i
-                                class="fa fa-facebook"></i>
-                            Facebook</a>
-                        <!-- Google+ -->
-                        <a href="https://plus.google.com/share?url=" title="Share on Google+" target="_blank"
-                           class="btn btn-googleplus hidden-xs"><i class="fa fa-google-plus"></i> Google+</a>
+                        <span class='st_facebook_large' st_title='<?php the_title(); ?>' st_url='<?php the_permalink(); ?>'></span>
+                        <span class='st_googleplus_large' st_title='<?php the_title(); ?>' st_url='<?php the_permalink(); ?>'></span>
 
                     </div>
+
+
                 </div>
                 <hr style="margin-top:9px; margin-bottom:0px">
 

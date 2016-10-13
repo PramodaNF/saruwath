@@ -53,7 +53,7 @@
                                     ?>
 
                                     <?php
-                                    echo '<a href="' . $meta_value . '">' . get_the_title($i) . '</a>';
+                                    echo '<a target="_blank"  href="' . $meta_value . '">' . get_the_title($i) . '</a>';
                                     ?>
 
                                 </h2>

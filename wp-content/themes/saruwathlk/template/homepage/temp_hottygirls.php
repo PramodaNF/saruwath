@@ -12,6 +12,7 @@
             'posts_per_page' => 6,
             'post_type' => 'custom_post',
             'order' => "DESC",
+            "post_status" => "publish",
             'category_name' => 'hotty'
         );
         $recent_posts = wp_get_recent_posts($args, ARRAY_A);

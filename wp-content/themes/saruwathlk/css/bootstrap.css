@@ -4949,6 +4949,7 @@ a.badge:focus {
   color: #337ab7;
   background-color: #fff;
 }
+
 .list-group-item > .badge {
   float: right;
 }
@@ -5006,8 +5007,8 @@ a.badge:focus {
   padding: 4px;
   margin-bottom: 20px;
   line-height: 1.42857143;
-  background-color: #fff;
-  border: 1px solid #ddd;
+  background-color: #721d96;
+  border: 1px solid #721d96;
   border-radius: 4px;
   -webkit-transition: border .2s ease-in-out;
        -o-transition: border .2s ease-in-out;
@@ -5023,6 +5024,21 @@ a.thumbnail:focus,
 a.thumbnail.active {
   border-color: #337ab7;
 }
+
+
+.active{
+  background: #113e3b; //This will be an image file. for simplicity I just use color
+}
+
+.current{
+  color:orange;
+}
+
+li {
+  cursor:pointer;
+}
+
+
 .thumbnail .caption {
   padding: 9px;
   color: #333;

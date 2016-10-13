@@ -1,0 +1,54 @@
+@font-face {
+    font-family: 'lovelyFont';
+    src: url('../fonts/BAUHS93_0.TTF');
+
+
+            format('opentype');
+}
+
+@font-face {
+    font-family: 'lovelyFont2';
+    src: url('../fonts/BERNHC_0.TTF');
+
+format('opentype');
+}
+
+
+
+@font-face {
+    font-family: 'lovelyFont3';
+    src: url('../fonts/FMArjunnUniN_2.ttf');
+
+format('opentype');
+}
+
+
+@font-face {
+    font-family: 'navfont';
+    src: url('../fonts/FMSandhyaneeUniN_2.ttf');
+
+format('opentype');
+}
+
+
+@font-face {
+    font-family: 'lovelyFont5';
+    src: url('../fonts/GOUDYSTO.TTF');
+
+format('opentype');
+}
+
+.link
+{
+    color: #000000;
+    text-decoration: none;
+    background-color: none;
+}
+
+.homepostwhite
+{
+    color: rgba(255, 255, 255, 0);
+
+    text-decoration: none;
+    background-color: none;
+}

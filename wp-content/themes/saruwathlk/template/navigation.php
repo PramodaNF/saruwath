@@ -1,9 +1,9 @@
 <div class="container-fluid"></div>
 <div style="border-bottom-color: #ffffff" class="container bor">
-    <div class="row" style="margin-top:10px; margin-bottom:10px">
+    <div class="row" style="margin-top:10px; margin-bottom:10px;background-color: #000000">
         <div class="col-md-4">
             <a href="?page_id=5">
-                <img src="<?php echo get_bloginfo('stylesheet_directory'); ?>/img/saruwathlogo.png"
+                <img src="<?php echo get_bloginfo('stylesheet_directory'); ?>/img/saruwathlogo2.png"
                      class="img-responsive" alt="logo">
             </a>
         </div>
@@ -24,7 +24,7 @@
             foreach ($recent_posts as $recent) {
                 ?>
 
-                <div class="hidden-xs" style="float:unset">
+                <div class="hidden-xs" style="float:unset;padding-top: 30px">
                     <a style="  display: block;
                            height: auto;
                            max-width: 100% !important;" href="http://www.saaravita.lk/newsongs" target="_blank"><img
@@ -45,14 +45,14 @@
     </div> <!-- end of header -->
 
 
-    <ul class="nav nav-pills nav-justified">
-        <li class="active"><a href="?page_id=5">Home</a></li>
-        <li><a href="?page_id=7">Hoty Girl</a></li>
-        <li><a href="?page_id=11">News</a></li>
-        <li><a href="?page_id=9">Foreign Cenema</a></li>
-        <li><a href="?page_id=13">Gallery</a></li>
-        <li><a href="?page_id=15">Young Artist</a></li>
-        <li><a href="?page_id=17">Music Video</a></li>
+    <ul id="navigation" class="nav nav-pills nav-justified">
+        <li style="font-family: navfont;font-size: 16px"><a href="?page_id=5">HOME</a></li>
+        <li style="font-family: navfont;font-size: 16px"><a href="?page_id=7">HOTTY GIRL</a></li>
+        <li style="font-family: navfont;font-size: 16px"><a href="?page_id=11">NEWS</a></li>
+        <li style="font-family: navfont;font-size: 16px"><a href="/cinema">FOREIGN CINEMA</a></li>
+        <li style="font-family: navfont;font-size: 16px"><a href="/gallary">GALLERY</a></li>
+        <li style="font-family: navfont;font-size: 16px"><a href="?page_id=15">YOUNG ARTIST</a></li>
+        <li style="font-family: navfont;font-size: 16px"><a href="?page_id=17">MUSIC VIDEO</a></li>
     </ul>
 
 
