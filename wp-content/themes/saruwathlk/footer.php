@@ -1,97 +1,82 @@
+
 <link href="https://fortawesome.github.io/Font-Awesome/assets/font-awesome/css/font-awesome.css" rel="stylesheet">
-<footer>
+<!--footer start from here-->
+
+
+<div class="col-lg-12">
+    <div class="col-lg-4">
+        <img src="<?php echo get_bloginfo('stylesheet_directory'); ?>/img/saruwathlogo2.png" alt="" class="img-responsive"/>
+    </div>
+    <div class="col-lg-8">
+        <br>
+        <h4 style="color: #00acee;">The ownership of this article, images and details of
+
+            videos in this letter are property of saruwath.lk. Copying
+
+            and/or publishing them on any kind of digital or print
+
+            media is strickly prohibited. Publishing is only permited
+
+            under the permision of the owner without editing or
+
+            aultering the content of the article.</h4>
+
+
+    </div>
+    <div class="row">
+        <div class="social-sh col-lg-12 col-md-12 col-sm-12 col-xs-12 pull-right">
+            <!-- Facebook -->
+            <a href="https://www.facebook.com/sharer/sharer.php?u=http://www.saravita.lk/new_pic/444767/2016-world-miss-university-%e0%b7%83%e0%b6%b3%e0%b7%84%e0%b7%8f-%e0%b6%bd%e0%b6%82%e0%b6%9a%e0%b7%8f%e0%b7%80-%e0%b7%80%e0%b7%99%e0%b6%b1%e0%b7%94%e0%b7%80%e0%b7%99%e0%b6%b1%e0%b7%8a-%e0%b6%b8"
+               title="Share on Facebook" target="_blank" class="btn btn-facebook"><i class="fa fa-facebook"></i>
+                Facebook</a>
+            <!-- Twitter -->
+            <a href="http://twitter.com/home?status=http://www.saravita.lk/new_pic/444767/2016-world-miss-university-%e0%b7%83%e0%b6%b3%e0%b7%84%e0%b7%8f-%e0%b6%bd%e0%b6%82%e0%b6%9a%e0%b7%8f%e0%b7%80-%e0%b7%80%e0%b7%99%e0%b6%b1%e0%b7%94%e0%b7%80%e0%b7%99%e0%b6%b1%e0%b7%8a-%e0%b6%b8"
+               title="Share on Twitter" target="_blank" class="btn btn-twitter"><i class="fa fa-twitter"></i>
+                Twitter</a>
+            <!-- Google+ -->
+            <a href="https://plus.google.com/share?url=http://www.saravita.lk/new_pic/444767/2016-world-miss-university-%e0%b7%83%e0%b6%b3%e0%b7%84%e0%b7%8f-%e0%b6%bd%e0%b6%82%e0%b6%9a%e0%b7%8f%e0%b7%80-%e0%b7%80%e0%b7%99%e0%b6%b1%e0%b7%94%e0%b7%80%e0%b7%99%e0%b6%b1%e0%b7%8a-%e0%b6%b8"
+               title="Share on Google+" target="_blank" class="btn btn-googleplus hidden-xs"><i
+                    class="fa fa-google-plus"></i> Google+</a>
+            <!-- LinkedIn -->
+            <a href="http://www.linkedin.com/shareArticle?mini=true&url=http://www.saravita.lk/new_pic/444767/2016-world-miss-university-%e0%b7%83%e0%b6%b3%e0%b7%84%e0%b7%8f-%e0%b6%bd%e0%b6%82%e0%b6%9a%e0%b7%8f%e0%b7%80-%e0%b7%80%e0%b7%99%e0%b6%b1%e0%b7%94%e0%b7%80%e0%b7%99%e0%b6%b1%e0%b7%8a-%e0%b6%b8&title='2016 World Miss University' සඳහා ලංකාව වෙනුවෙන් මම ඉදිරිපත් වුණා&summary="
+               title="Share on LinkedIn" target="_blank" class="btn btn-linkedin hidden-xs"><i
+                    class="fa fa-linkedin"></i> LinkedIn</a>
+            <!--&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="http://www.linkedin.com/shareArticle?mini=true&url=http://www.saravita.lk/new_pic/444767/2016-world-miss-university-%e0%b7%83%e0%b6%b3%e0%b7%84%e0%b7%8f-%e0%b6%bd%e0%b6%82%e0%b6%9a%e0%b7%8f%e0%b7%80-%e0%b7%80%e0%b7%99%e0%b6%b1%e0%b7%94%e0%b7%80%e0%b7%99%e0%b6%b1%e0%b7%8a-%e0%b6%b8&title='2016 World Miss University' සඳහා ලංකාව වෙනුවෙන් මම ඉදිරිපත් වුණා&summary=" title="Share on LinkedIn" target="_blank" class="btn btn-linkedin hidden-xs"><i class="fa fa-phone pull-right"></i> Contact - saruwath@gmail.com  Advertising - nadeeadming@gmail.com</a>
+             subscribe -->
+            <h4 style="float:  right; color: #ffc000;">Contact - saruwath@gmail.com Advertising -
+                nadeeadming@gmail.com</h4>
+
+        </div>
+
+    </div>
+
+
+
+
+</div>
+
+
+<!--footer start from here-->
+
+<div class="copyright">
     <div class="container">
-        <div class="row">
-            <div class="col-md-4 col-sm-6 footerleft ">
-                <div class="logofooter">
-                    <img src="<?php echo get_bloginfo('stylesheet_directory'); ?>/img/saruwathlogo2.png" alt=""
-                         class="img-responsive" style="width: 50%;"/>
-                </div>
-                <p>මෙම සරුවත්.lk වෙබ් අඩවිය තුළ පළවෙන සියලු ලිපි, ඡායාරූප හා විඩියෝ අප සතුවන බැවින් අවසරයකින් තොරව
-                    ඩිජිටල් හා මුද්‍රිත මාධයයන්හි නැවත පළ කිරීම සපුරා තහනම්ය. එහෙත්, සරුවත්.lk වෙබ් අඩවියේ අනුග්‍රහයෙන්
-                    පළ කරන බව සඳහන් කොට මෙම ලිපි ඡායාරූප හා විඩියෝ දර්ශන සංස්කරණය නොකට පළ කරන්නට අවසර ඇත.</p>
-
-                <p><i class="fa fa-phone"></i> Phone : +94 011 4497674</p>
-                <p><i class="fa fa-envelope"></i> E-mail : saruwathweb@gmail.com</p>
-
-            </div>
-            <div class="col-md-2 col-sm-6 paddingtop-bottom">
-                <h6 class="heading7">GENERAL LINKS</h6>
-                <ul class="footer-ul">
-                    <li style="font-family: navfont;font-size: 16px"><a href="?page_id=5">HOME</a></li>
-                    <li style="font-family: navfont;font-size: 16px"><a href="?page_id=7">HOTTY GIRL</a></li>
-                    <li style="font-family: navfont;font-size: 16px"><a href="?page_id=11">NEWS</a></li>
-                    <li style="font-family: navfont;font-size: 16px"><a href="?page_id=9">FOREIGN CINEMA</a></li>
-                    <li style="font-family: navfont;font-size: 16px"><a href="?page_id=13">GALLERY</a></li>
-                    <li style="font-family: navfont;font-size: 16px"><a href="?page_id=15">YOUNG ARTIST</a></li>
-                    <li style="font-family: navfont;font-size: 16px"><a href="?page_id=17">MUSIC VIDEO</a></li>
-                </ul>
-            </div>
-            <div class="col-md-3 col-sm-6 paddingtop-bottom">
-                <h6 class="heading7">LATEST POST</h6>
-                <div class="post">
-                    <?php
-                    $args = array(
-                        'posts_per_page' => 3,
-                        'post_type' => 'custom_post',
-                        "post_status" => "publish",
-                        "orderby" => "date",
-                        "order" => 'DESC',
-
-                    );
+        <div class="col-md-6">
+            <p>© 2016 - All Rights with Saruwath.lk | Developed By - <a href="#">ideasoft</a> with <a href="#">Tharuka Fernando</a></p>
 
 
-                    $recent_posts = wp_get_recent_posts($args, ARRAY_A);
-                    ?>
 
-                    <?php
-                    foreach ($recent_posts as $recent) {
-                        $i = $recent['ID'];
-
-                        $date = get_the_time('F j, Y', $i);
-                        ?>
-
-
-                        <p style="overflow:hidden"">
-                            <?php
-                            echo '<a href="' . get_permalink($i) . '">' . get_the_title($i) . '</a>';
-                            ?>
-                            <span> <?php echo $date ?></span>
-                        </p>
-
-                        <?php
-                    }
-                    ?>
-                </div>
-            </div>
-            <div class="col-md-3 col-sm-6 paddingtop-bottom">
-                <div class="fb-page" data-href="https://www.facebook.com/facebook" data-tabs="timeline"
-                     data-height="300" data-small-header="false" style="margin-bottom:15px;"
-                     data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
-                    <div class="fb-xfbml-parse-ignore">
-                        <blockquote cite="https://www.facebook.com/facebook"><a
-                                href="https://www.facebook.com/facebook">Facebook</a></blockquote>
-                    </div>
-                </div>
-            </div>
         </div>
+
     </div>
-    <div class="copyright">
-        <div class="container">
-            <div class="col-md-6">
-                <p>© 2016 - All Rights with Saruwath.lk</p>
+</div>
 
-            </div>
-            <div class="col-md-6">
-                <ul class="bottom_ul">
 
-              
+<script src="<?php echo get_bloginfo('stylesheet_directory'); ?>/js/bootstrap.js" type="text/javascript"></script>
+<script src="<?php echo get_bloginfo('stylesheet_directory'); ?>/js/bootstrap.min.js" type="text/javascript"></script>
+<script src="<?php echo get_bloginfo('stylesheet_directory'); ?>/js/jquery.js" type="text/javascript"></script>
 
-                    <p>Developed By - <a href="#">ideasoft</a> with <a href="#">Tharuka Fernando</a></p>
 
-                </ul>
-            </div>
-        </div>
-    </div>
-</footer>
 

@@ -1,17 +1,32 @@
-<div class="container">
-    <div class="page-header">
-        <h1>Young Artists</h1>
+<div class="container" style="background-color: #ffc000;">
+
+
+    <div class="col-lg-6" style="background-color: #ffc000;">
+        <a href="/young" style="font-family: lovelyFont2">
+            <div class="link" style="color: white">
+                <h1>YOUNG ARTIST</h1>
+            </div>
+        </a>
     </div>
+    <div class="col-lg-4" style="background-color: #ffc000;">
+        <h1 class="pull-left"></h1>
+    </div>
+<!--    <div class="col-lg-2" style="background-color: #ffc000;">-->
+<!--        <h4 class="pull-right" style="color: #ffffff;"><br><br>more</h4>-->
+<!--    </div>-->
+
 
 </div>
 
 <div class="container">
-    <div class="row text-center">
+    <div class="row text-center" style="background-color: #ffc000;">
+
         <?php
         $args = array(
             'posts_per_page' => 6,
             'post_type' => 'custom_post',
             'order' => "DESC",
+            "post_status" => "publish",
             'category_name' => 'young'
         );
         $recent_posts = wp_get_recent_posts($args, ARRAY_A);
@@ -45,6 +60,8 @@
             <?php
         }
         ?>
+
+
 
     </div>
 </div>

@@ -5,12 +5,13 @@
 get_header();
 
 ?>
-<body>
+
+<body style="border-left: 50px solid black; border-right: 50px solid black;">
 
 
-<?php //require_once('template/navigation.php'); ?>
 <!-- /.------------------------------End Menu---------------------------------------- -->
 
+<div style="width: 100%; height: 20px; background-color: white;"></div>
 
 <div class="container-fluid">
     <div class="row">
@@ -29,21 +30,25 @@ get_header();
     </div>
 </div>
 
-<!--Foreign Cinema Starts-->
-<?php require_once('template/homepage/temp_foreign_cinema.php'); ?>
-<!--Foreign Cinema Ends-->
+
+<!--News Starts-->
+<?php require_once('template/homepage/temp_news.php'); ?>
+<!--News Ends-->
+<br>
 
 <!--Gallery Starts-->
 <?php require_once('template/homepage/temp_gallery.php'); ?>
 <!--Gallery Ends-->
+<br>
 
 <!--Young Artists Starts-->
 <?php require_once('template/homepage/temp_young_artists.php'); ?>
 <!--Young Artists  Ends-->
+<br>
 
-<!--Hotty Girls Starts-->
-<?php require_once('template/homepage/temp_hottygirls.php'); ?>
-<!--Hotty Girls Ends-->
+<!--Music Video Starts-->
+<?php require_once('template/homepage/temp_musicvideo.php'); ?>
+<!--Music Video  Ends-->
 
 <!--Top Charts Starts-->
 <?php require_once('template/homepage/temp_topcharts.php'); ?>
@@ -52,9 +57,5 @@ get_header();
 <!--footer start from here-->
 <?php require_once('footer.php'); ?>
 <!--footer end from here-->
-
-<?php require_once('template/javascript.php'); ?>
-
-
 </body>
 </html>

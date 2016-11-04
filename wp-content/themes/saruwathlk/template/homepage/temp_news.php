@@ -1,32 +1,71 @@
-<div class="container" style="background-color: #2c66be;">
+<?php
+/**
+ * Created by PhpStorm.
+ * User: pramoda
+ * Date: 11/4/16
+ * Time: 10:15 PM
+ */
+?>
+
+<div class="container" style="background-color: #000;">
 
 
-    <div class="col-lg-6" style="background-color: #2c66be;">
-        <a href="/gallery" style="font-family: lovelyFont2">
+    <div class="col-lg-6" style="background-color: #000;">
+
+
+        <a href="/news" style="font-family: lovelyFont2">
             <div class="link" style="color: white">
-                <h1>GALLERY</h1>
+                <h1>NEWS</h1>
             </div>
         </a>
     </div>
-    <div class="col-lg-4" style="background-color: #2c66be;">
+    <div class="col-lg-4" style="background-color: #000;">
         <h1 class="pull-left"></h1>
     </div>
-<!--    <div class="col-lg-2" style="background-color: #2c66be;">-->
-<!--        <h4 class="pull-right" style="color: #ffffff;"><br><br>more</h4>-->
-<!--    </div>-->
+
+
+    <div class="news magenta col-lg-12 ">
+        <span>Latest News</span>
+        <ul>
+            <?php
+            $args = array(
+                'posts_per_page' => 6,
+                'post_type' => 'custom_post',
+                'order' => "DESC",
+                'category_name' => 'news'
+            );
+            $recent_posts = wp_get_recent_posts($args, ARRAY_A);
+            ?>
+
+            <?php
+            foreach ($recent_posts as $recent) {
+                $i = $recent['ID'];
+                ?>
+
+                <li>
+                    <?php
+                    echo '<a href="' . get_permalink($i) . '">' . get_the_title($i) . '</a>';
+                    ?>
+                </li>
+
+
+                <?php
+            }
+            ?>
+        </ul>
+    </div>
 
 </div>
 
-<div class="container" style="background-color: #2c66be;">
+<div class="container" style="background-color: #000;">
     <div class="row text-center">
-
         <?php
         $args = array(
             'posts_per_page' => 6,
             'post_type' => 'custom_post',
             'order' => "DESC",
             "post_status" => "publish",
-            'category_name' => 'gallery'
+            'category_name' => 'news'
         );
         $recent_posts = wp_get_recent_posts($args, ARRAY_A);
         ?>
@@ -59,8 +98,6 @@
             <?php
         }
         ?>
-
-
 
     </div>
 </div>

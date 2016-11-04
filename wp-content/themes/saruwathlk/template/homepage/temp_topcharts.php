@@ -1,18 +1,16 @@
 <div class="container">
     <div class="page-header">
-        <h1>Top Chart</h1>
+        <h1 style="font-weight: bolder;">Top Chart</h1>
     </div>
 
 </div>
 
 <div class="container" style="background-color: #ffffff;">
     <div class="row">
-
         <div class="col-lg-6">
             <div class="row">
 
-                <ul class="event-list">
-
+                <ul class="event-list" style="background-color: #999999;">
 
                     <?php
                     $args = array(
@@ -29,50 +27,47 @@
                         $i = $recent['ID'];
                         ?>
 
-
                         <li>
-
-
                             <time datetime="2014-07-20 2000">
+                                <br>
                             <span class="day"><?php
                                 $meta_value = get_post_meta($recent['ID'], 'songnum', true);
                                 echo $meta_value;
                                 ?></span>
-                                <span class="month">NO</span>
-
                             </time>
-                            <img alt="My 24th Birthday!" src="<?php
-                            $feat_image = wp_get_attachment_url(get_post_thumbnail_id($i));
-                            echo $feat_image;
-                            ?>"/>
-                            <div class="info">
-                                <h2 class="title">
+                            <img alt="My 24th Birthday!"
+                                 src="<?php
+                                 $feat_image = wp_get_attachment_url(get_post_thumbnail_id($i));
+                                 echo $feat_image;
+                                 ?>"/>
+                            <div class="info" style="background-color: black;">
 
-                                    <?php
-                                    $meta_value = get_post_meta($recent['ID'], 'youtube_link', true);
-                                    ?>
-
-                                    <?php
-                                    echo '<a target="_blank"  href="' . $meta_value . '">' . get_the_title($i) . '</a>';
-                                    ?>
-
-                                </h2>
+                                <a href="  <?php
+                                $meta_value = get_post_meta($recent['ID'], 'youtube_link', true);
+                                echo $meta_value;
+                                ?>">
+                                    <div  class="songlink" style="color: #ffc000;" >
+                                        <h3><?php echo get_the_title($i)?></h3>
+                                    </div>
+                                </a>
 
                                 <ul>
 
-                                    <li style="width:33%;">-<?php
+                                    <li style="width:33%; color: #0087bd; font-size: initial; font-weight: bolder;">-
+                                        <?php
                                         $meta_value = get_post_meta($recent['ID'], 'artist_name', true);
                                         echo $meta_value;
                                         ?>-<span></span></li>
+                                    <li style="width:33%; color: #d23435; font-size: large;">Views : 23<span></span></li>
                                 </ul>
                             </div>
 
                         </li>
 
+
                         <?php
                     }
                     ?>
-
                 </ul>
 
             </div>
@@ -81,7 +76,8 @@
         <div class="col-lg-6">
             <div class="row">
 
-                <ul class="event-list">
+                <ul class="event-list" style="background-color: #999999;">
+
                     <?php
                     $args = array(
                         'posts_per_page' => 5,
@@ -99,43 +95,45 @@
 
                         <li>
                             <time datetime="2014-07-20 2000">
+                                <br>
                             <span class="day"><?php
                                 $meta_value = get_post_meta($recent['ID'], 'songnum', true);
                                 echo $meta_value;
                                 ?></span>
-                                <span class="month">NO</span>
-
                             </time>
-                            <img alt="My 24th Birthday!" src="<?php
-                            $feat_image = wp_get_attachment_url(get_post_thumbnail_id($i));
-                            echo $feat_image;
-                            ?>"/>
-                            <div class="info">
-                                <h2 class="title">
-                                    <?php
-                                    $meta_value = get_post_meta($recent['ID'], 'youtube_link', true);
-                                    ?>
+                            <img alt="My 24th Birthday!"
+                                 src="<?php
+                                 $feat_image = wp_get_attachment_url(get_post_thumbnail_id($i));
+                                 echo $feat_image;
+                                 ?>"/>
+                            <div class="info" style="background-color: black;">
 
-                                    <?php
-                                    echo '<a href="' . $meta_value . '">' . get_the_title($i) . '</a>';
-                                    ?>
-                                </h2>
+                                <a href="  <?php
+                                $meta_value = get_post_meta($recent['ID'], 'youtube_link', true);
+                                echo $meta_value;
+                                ?>">
+                                    <div  class="songlink" style="color: #ffc000;" >
+                                        <h3><?php echo get_the_title($i)?></h3>
+                                    </div>
+                                </a>
 
                                 <ul>
-                                    <li style="width:33%;">-<?php
+
+                                    <li style="width:33%; color: #0087bd; font-size: initial; font-weight: bolder;">-
+                                        <?php
                                         $meta_value = get_post_meta($recent['ID'], 'artist_name', true);
                                         echo $meta_value;
-                                        ?>-<span></span>
-                                    </li>
+                                        ?>-<span></span></li>
+                                    <li style="width:33%; color: #d23435; font-size: large;">Views : 23<span></span></li>
                                 </ul>
                             </div>
 
                         </li>
 
+
                         <?php
                     }
                     ?>
-
                 </ul>
 
             </div>

@@ -6,7 +6,7 @@ get_header();
 
 ?>
 
-<body>
+<body style="border-left: 50px solid black; border-right: 50px solid black;">
 
 
 
@@ -21,7 +21,7 @@ get_header();
         <!-- Article main content -->
         <article class="col-sm-8 maincontent">
             <header class="page-header">
-                <h1 >Hoty Girl</h1>
+                <h1 >Models</h1>
             </header>
 
             <div class="row text-center">

@@ -10,7 +10,7 @@ get_header();
 
 
 
-<body>
+<body style="border-left: 50px solid black; border-right: 50px solid black;">
 
 
 

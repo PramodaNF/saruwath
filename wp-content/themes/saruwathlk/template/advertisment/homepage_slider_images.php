@@ -7,6 +7,8 @@
                     <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
                     <li data-target="#carousel-example-generic" data-slide-to="1"></li>
                     <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="4"></li>
                 </ol>
 
                 <?php
@@ -51,17 +53,30 @@
                                  ?>"
                                  alt="">
                         </div>
+
+                        <div class="item">
+                            <img class="slide-image"
+                                 src="<?php
+                                 $meta_value = get_post_meta($recent['ID'], 'fourth_slider_image', true);
+                                 echo $meta_value;
+                                 ?>"
+                                 alt="">
+                        </div>
+
+                        <div class="item">
+                            <img class="slide-image"
+                                 src="<?php
+                                 $meta_value = get_post_meta($recent['ID'], 'fifth_slider_image', true);
+                                 echo $meta_value;
+                                 ?>"
+                                 alt="">
+                        </div>
                     </div>
 
                     <?php
                 }
                 ?>
-                <!--                        <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">-->
-                <!--                            <span class="glyphicon glyphicon-chevron-left"></span>-->
-                <!--                        </a>-->
-                <!--                        <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">-->
-                <!--                            <span class="glyphicon glyphicon-chevron-right"></span>-->
-                <!--                        </a>-->
+            
             </div>
         </div>
     </div>

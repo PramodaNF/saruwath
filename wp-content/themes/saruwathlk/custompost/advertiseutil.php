@@ -82,6 +82,14 @@ function advertisment_data($post_id)
         update_post_meta($post_id, 'third_slider_image', sanitize_text_field($_POST['third_slider_image']));
     }
 
+    if (isset($_POST['fourth_slider_image'])) {
+        update_post_meta($post_id, 'fourth_slider_image', sanitize_text_field($_POST['fourth_slider_image']));
+    }
+
+    if (isset($_POST['fifth_slider_image'])) {
+        update_post_meta($post_id, 'fifth_slider_image', sanitize_text_field($_POST['fifth_slider_image']));
+    }
+
 //    Post Category Advertisment
     if (isset($_POST['first_side_advertisment'])) {
         update_post_meta($post_id, 'first_side_advertisment', sanitize_text_field($_POST['first_side_advertisment']));
@@ -152,6 +160,18 @@ function advertisment_meta_box_content($post)
         <label for="third_slider_image" class="prfx-row-title"><?php _e('3rd Slider Image', 'prfx-textdomain') ?></label>
         <input style="width: 100%" type="text" name="third_slider_image" id="sub-title"
                value="<?php if (isset($prfx_stored_meta['third_slider_image'])) echo $prfx_stored_meta['third_slider_image'][0]; ?>"/>
+    </p>
+
+    <p>
+        <label for="fourth_slider_image" class="prfx-row-title"><?php _e('4th Slider Image', 'prfx-textdomain') ?></label>
+        <input style="width: 100%" type="text" name="fourth_slider_image" id="sub-title"
+               value="<?php if (isset($prfx_stored_meta['fourth_slider_image'])) echo $prfx_stored_meta['fourth_slider_image'][0]; ?>"/>
+    </p>
+
+    <p>
+        <label for="fifth_slider_image" class="prfx-row-title"><?php _e('5th Slider Image', 'prfx-textdomain') ?></label>
+        <input style="width: 100%" type="text" name="fifth_slider_image" id="sub-title"
+               value="<?php if (isset($prfx_stored_meta['fifth_slider_image'])) echo $prfx_stored_meta['fifth_slider_image'][0]; ?>"/>
     </p>
 
 

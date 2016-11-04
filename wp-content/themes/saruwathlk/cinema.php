@@ -7,7 +7,7 @@ get_header();
 ?>
 
 
-<body>
+<body style="border-left: 50px solid black; border-right: 50px solid black;">
 
 
 <div id='main-content'><!--content start--></div>
@@ -18,7 +18,7 @@ get_header();
         <!-- Article main content -->
         <article class="col-sm-8 maincontent">
             <header class="page-header">
-                <h1>Cinema</h1>
+                <h1>Foreign Cinema</h1>
             </header>
 
             <div class="row text-center">
@@ -100,7 +100,7 @@ get_header();
     <?php require_once('footer.php'); ?>
     <!--footer end from here-->
 
-    <?php require_once('template/javascript.php'); ?>
+<!--    --><?php //require_once('template/javascript.php'); ?>
 
 
 </body>

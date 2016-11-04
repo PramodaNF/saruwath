@@ -45,6 +45,16 @@ format('opentype');
     background-color: none;
 }
 
+.songlink
+{
+    color: #ffc000;
+    font-style:oblique;
+    text-decoration: none;
+    background-color: none;
+    padding-left: 10px;
+    padding-bottom: 80px;
+}
+
 .homepostwhite
 {
     color: rgba(255, 255, 255, 0);
